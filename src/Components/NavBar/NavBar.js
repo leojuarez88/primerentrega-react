@@ -27,9 +27,10 @@ const NavBar =() => {
             <a class="nav-link" href="#">CONTACTO</a>
           </li>
         </ul>
-        <span class="navbar-text">
-          Navbar text with an inline element
-        </span>
+        <div class="">
+        <img src="./NavBar/Cartwidget.jpg" class="" alt="..."></img>  
+          
+        </div>
       </div>
     </div>
   </nav>
