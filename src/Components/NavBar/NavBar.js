@@ -1,14 +1,15 @@
 import React from "react";
+import CartWidget from "../CartWidget/CartWidget";
 
-const NavBar = () => {
+export const NavBar = () => {
   return (
-    <nav class="navbar navbar-expand-lg bg-body-tertiary p-3 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-3 bs-primary-fgb">
-      <div class="container-fluid">
+    <nav className="navbar navbar-expand-lg bg-body-tertiary navbar bg-primary">
+      <div className="container-fluid">
         <a class="navbar-brand" href="#">
-          Light-Vel S.A.
+          Lightvel
         </a>
         <button
-          class="navbar-toggler"
+          className="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarText"
@@ -16,43 +17,29 @@ const NavBar = () => {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarText">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">
-                INICIO
+        <div className="collapse navbar-collapse" id="navbarText">
+          <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+            <li className="nav-item">
+              <a className="nav-link active" aria-current="page" href="#">
+                Inicio
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                PRODUCTOS
+            <li className="nav-item">
+              <a className="nav-link" href="#">
+                Contacto
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                SOBRE NOSOTROS
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                FORMAS DE PAGO
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                CONTACTO
+            <li className="nav-item">
+              <a className="nav-link" href="#">
+                Productos
               </a>
             </li>
           </ul>
-          <div>
-          <div>
-        
-        <img src="./Cartwidget.jpg" width="50"></img>
-            
-            </div>
-          </div>
+          <a className="navbar-right" href="#">
+            <CartWidget />
+          </a>
         </div>
       </div>
     </nav>

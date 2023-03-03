@@ -1,17 +1,19 @@
+import ItemCount from "../ItemCount/ItemCount";
 import React from "react";
+import Titulo from "../Titulo/Titulo";
 
+export const ItemListContainer = ({ texto }) => {
+  const onAdd = (quantity) => {
+    console.log(`Compraste ${quantity} unidades`);
+  };
 
-const ItemListContainer =() => {
-    return  <div className="container card">
-      <div class="card-body ">
-      <img src="./Imagen Inicio 10 Mejorada.jpg" class="card-img-top sm" alt="..."></img>  
-      <h1 class="card-title">Veladores Multicolor x 4 unidades</h1>
-      <p class="card-text">Modelo para oficinas modernas.</p>
-      <a href="#" class="btn btn-primary">Comprar</a>
-    </div>
-      
-  </div>
+  return (
+    <>
+      <Titulo greeting={texto} />
+
+      <ItemCount initial={1} stock={10} onAdd={onAdd} />
+    </>
+  );
 };
-
 
 export default ItemListContainer;

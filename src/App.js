@@ -5,14 +5,11 @@ import ItemListContainer from './Components/ItemListContainer/ItemListContainer'
 function App() {
   return (
     <div className="App">
-
-      
+ 
       <NavBar/>
 
-      <ItemListContainer/> 
-
+      <ItemListContainer texto="Lightvel"/>
     
-        
       
     </div>
   );
